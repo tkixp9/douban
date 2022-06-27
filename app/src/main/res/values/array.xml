@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="categories">
+        <item>华语</item>
+        <item>欧美</item>
+        <item>日韩</item>
+    </string-array>
+</resources>

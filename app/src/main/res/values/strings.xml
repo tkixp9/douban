@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DoubanFilm</string>
+    <string name="category_title">电影分类</string>
 </resources>
