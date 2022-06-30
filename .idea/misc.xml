@@ -5,8 +5,12 @@
       <map>
         <entry key="..\:/work/Android/test/douban/app/src/main/res/drawable/catalog_item_selector.xml" value="0.1335" />
         <entry key="..\:/work/Android/test/douban/app/src/main/res/drawable/cate_item_selector.xml" value="0.1355" />
-        <entry key="..\:/work/Android/test/douban/app/src/main/res/layout/activity_list.xml" value="0.1875" />
+        <entry key="..\:/work/Android/test/douban/app/src/main/res/drawable/film_gird_item_pressed_selector.xml" value="0.1" />
+        <entry key="..\:/work/Android/test/douban/app/src/main/res/drawable/film_item_cover_selector.xml" value="0.2095" />
+        <entry key="..\:/work/Android/test/douban/app/src/main/res/drawable/film_item_selector.xml" value="0.1" />
+        <entry key="..\:/work/Android/test/douban/app/src/main/res/layout/activity_list.xml" value="0.1" />
         <entry key="..\:/work/Android/test/douban/app/src/main/res/layout/activity_main.xml" value="0.17806484295845998" />
+        <entry key="..\:/work/Android/test/douban/app/src/main/res/layout/film_item.xml" value="0.1" />
       </map>
     </option>
   </component>
