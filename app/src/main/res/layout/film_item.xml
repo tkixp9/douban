@@ -8,8 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="228dp"
-        android:paddingVertical="10dp"
-        android:background="@drawable/film_item_selector">
+        android:paddingVertical="10dp">
 
         <ImageView
             android:id="@+id/img"
@@ -23,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="@color/blue_bg_cc"
+            android:background="@color/primary_cc"
             android:gravity="center"
             android:paddingHorizontal="10dp"
             android:textColor="@color/white"

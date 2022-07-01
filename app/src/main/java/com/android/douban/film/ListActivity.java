@@ -4,13 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.GridView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.douban.film.list.ListAdapter;
-
-import org.w3c.dom.Text;
+import com.android.douban.film.listener.AutoLoadListener;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -42,10 +41,18 @@ public class ListActivity extends Activity {
         mData = new ArrayList();
         mAdapter = new ListAdapter(this, mData);
         mListView.setAdapter(mAdapter);
-        getData();
+        mListView.setSelector(getResources().getDrawable(R.drawable.normal_selector));
+        mListView.setOnScrollListener(new AutoLoadListener(new AutoLoadListener.AutoLoadCallBack() {
+            @Override
+            public void execute() {
+                Log.e(TAG, "try to load more");
+                getData(false);
+            }
+        }));
+        getData(true);
     }
 
-    private void getData () {
+    private void getData (boolean first) {
         Request request = new Request.Builder()
                 .url("https://movie.douban.com/j/search_subjects?type=movie&tag=" + mType + "&sort=recommend&page_limit=20&page_start=0")
                 .get()
@@ -64,6 +71,7 @@ public class ListActivity extends Activity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        mListView.setVisibility(View.VISIBLE);
                         mAdapter.notifyDataSetChanged();
                     }
                 });

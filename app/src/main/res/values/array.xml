@@ -4,5 +4,12 @@
         <item>欧美</item>
         <item>日本</item>
         <item>韩国</item>
+        <item>动作</item>
+        <item>喜剧</item>
+        <item>爱情</item>
+        <item>科幻</item>
+        <item>悬疑</item>
+        <item>恐怖</item>
+        <item>成长</item>
     </string-array>
 </resources>

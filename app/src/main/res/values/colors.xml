@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="primary">#327cfe</color>
+    <color name="primary_66">#66327cfe</color>
     <color name="white_light">#FFFFFF</color>
-    <color name="blue_bg_cc">#cc327cfe</color>
+    <color name="primary_cc">#cc327cfe</color>
 </resources>

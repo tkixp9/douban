@@ -23,7 +23,7 @@
         android:id="@+id/categories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/cate_item_selector"
+        android:background="@drawable/normal_selector"
         android:orientation="vertical">
 
     </LinearLayout>

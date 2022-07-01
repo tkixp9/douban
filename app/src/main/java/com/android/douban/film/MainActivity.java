@@ -3,7 +3,6 @@ package com.android.douban.film;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -41,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         tv.setTextColor(getResources().getColor(R.color.primary));
         tv.setBackgroundColor(0xFFF5F5F5);
         tv.setGravity(Gravity.CENTER);
+        tv.setBackground(getResources().getDrawable(R.drawable.normal_selector));
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
